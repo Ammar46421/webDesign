@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav id="navbar">
+      <div id="titleBar">
+        <h2 id="title">Blogs</h2>
+      </div>
+      <div id="menuBar">
+        <ul id="menuList">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Blog Start -->
+    <div id="blogContainer">
+      <form action="" id="blogForm">
+        <div class="formGroup">
+          <label for="title">Add Title</label>
+          <input type="text" placeholder="Add Title...." required />
+        </div>
+        <div class="formGroup">
+          <label for="content">Content</label>
+          <textarea
+            id="content"
+            name="content"
+            rows="5"
+            placeholder="Write your blog here..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submitButton">Submit Blog</button>
+        </div>
+      </form>
+    </div>
+    <!-- Blog End -->
+    <script src="app.js"></script>
+  </body>
+</html>
