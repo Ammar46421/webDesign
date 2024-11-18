@@ -145,6 +145,10 @@
   .deleteButton{
     color: white;
     background-color: #333;
+    width: 30%;
+    height: 30px;
+    border-radius: 12px;
+    
   }
   
 
