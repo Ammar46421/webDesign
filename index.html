@@ -27,12 +27,12 @@
         <h2 class="addBlog" style="text-align: center; font-size: 50px; margin-bottom: 20px;">Add Blog</h2>
         <div class="formGroup">
           <label for="title">Add Title</label>
-          <input type="text" id="title" placeholder="Add Title...." required />
+          <input type="text" id="addTitle" placeholder="Add Title...." required />
         </div>
         <div class="formGroup">
           <label for="content">Content</label>
           <textarea
-            id="content"
+            id="addContent"
             name="content"
             rows="5"
             placeholder="Write your blog here...."
@@ -40,7 +40,6 @@
           ></textarea>
         </div>
         <div class="form-group">
-          <!-- Removed type="submit" and directly using onclick -->
           <button type="button" id="submitButton" onclick="submitBlog()">Submit Blog</button>
         </div>
       </form>
@@ -50,7 +49,7 @@
     <!-- Blog Posts Section -->
     <section id="blogPostsSection">
       <h2>Recent Blogs</h2>
-      <div id="blogPosts"></div>
+      <div id="blogPost"></div>
     </section>
     <!-- Blog Post end -->
 
