@@ -134,12 +134,17 @@
   
   .blogPost h3 {
     margin: 0 0 10px;
-    color: #4caf50;
+    color: #000000;
   }
   
   .blogPost p {
     margin: 5px 0;
     color: #555;
+  }
+
+  .deleteButton{
+    color: white;
+    background-color: #333;
   }
   
 

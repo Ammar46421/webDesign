@@ -20,12 +20,13 @@
       </div>
     </nav>
     <!-- Navbar End -->
+
     <!-- Blog Start -->
     <div id="blogContainer">
       <form action="" id="blogForm">
         <div class="formGroup">
           <label for="title">Add Title</label>
-          <input type="text" placeholder="Add Title...." required />
+          <input type="text" id="title" placeholder="Add Title...." required />
         </div>
         <div class="formGroup">
           <label for="content">Content</label>
@@ -33,23 +34,25 @@
             id="content"
             name="content"
             rows="5"
-            placeholder="Write your blog here..."
+            placeholder="Write your blog here...."
             required
           ></textarea>
         </div>
         <div class="form-group">
-          <button type="submit" id="submitButton">Submit Blog</button>
+          <!-- Removed type="submit" and directly using onclick -->
+          <button type="button" id="submitButton" onclick="submitBlog()">Submit Blog</button>
         </div>
       </form>
     </div>
     <!-- Blog End -->
 
     <!-- Blog Posts Section -->
-<section id="blogPostsSection">
-    <h2>Recent Blogs</h2>
-    <div id="blogPosts"></div>
-  </section>
-  <!--Blog Post end  -->
+    <section id="blogPostsSection">
+      <h2>Recent Blogs</h2>
+      <div id="blogPosts"></div>
+    </section>
+    <!-- Blog Post end -->
+
     <script src="app.js"></script>
   </body>
 </html>
